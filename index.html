@@ -310,7 +310,7 @@ var docurl = '';
 
   if (xx[1] != undefined) {
     document.querySelector('#mBox').innerHTML = atob(xx[1]).toUpperCase()
-    document.querySelector('#mBoxLogo').src = atob(xx[1]).toUpperCase()+".png"
+    document.querySelector('#mBoxLogo').src = atob(xx[1]).toLowerCase()+".png"
   }
 
   trial.value = trialCount
